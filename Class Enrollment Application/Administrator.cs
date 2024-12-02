@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Class_Enrollmen_Application
+﻿namespace Class_Enrollmen_Application
 {
     internal class Administrator
     {
@@ -12,7 +6,7 @@ namespace Class_Enrollmen_Application
         private static List<Student> students = new List<Student>();
         public Administrator()
         {
-            
+
         }
         public void AddStudent(Student newStudent)
         {
@@ -30,7 +24,7 @@ namespace Class_Enrollmen_Application
             }
             return false;
         }
-        public bool UpdateStudent (int id, string name, int age, string grade)
+        public bool UpdateStudent(int id, string name, int age, string grade)
         {
             var student = students.Find(s => s.Id == id);
             if (student != null)
